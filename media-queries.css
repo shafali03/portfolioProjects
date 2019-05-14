@@ -1,0 +1,32 @@
+/* responsive */
+
+@media (min-width: 768px) {
+  .card__section {
+    flex-direction: row;
+    padding: 3em;
+  }
+  .home-heading-1,
+  .home-heading-2 {
+    font-size: 3em;
+  }
+  .card__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .card__container-box {
+    padding: 1em;
+  }
+  .card__picture {
+    height: 20em;
+  }
+}
+
+@media (min-width: 1224px) {
+  .card__details {
+    padding: 1em;
+  }
+  #price-title {
+    font-size: 1.6em;
+  }
+}
