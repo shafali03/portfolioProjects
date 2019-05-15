@@ -1,14 +1,18 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   height: 100vh;
-  padding: 0;
-  margin: 0;
   font-family: "Lato", sans-serif;
-  /* box-sizing: border-box; */
+  overflow-x: hidden;
+  font-size: 10px;
+}
+
+.section-project {
+  background-color: #e5e6e4;
 }
 
 h1,
@@ -24,14 +28,23 @@ p {
   font-weight: 100;
 }
 
-section {
-  background: #fff;
-  overflow: hidden;
-  height: 100vh;
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 ul li {
   list-style: none;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Lato", sans-serif;
+}
+
+section {
+  padding: 10rem 0;
+  background-color: #fff;
 }
 
 /*
@@ -69,15 +82,14 @@ background video
 }
 
 /*
-end of background video
-*****************************************/
+end of video
+*************/
 
 /*
 Home page text
 *****************************************/
 
-.home-btn,
-.home-content {
+.home__content {
   position: absolute;
   top: 60%;
   left: 50%;
@@ -86,16 +98,12 @@ Home page text
   width: 90%;
   height: 50%;
   border: 1px;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
 }
 
-.home-heading-1,
-.home-heading-2 {
+.home__heading-1,
+.home__heading-2 {
   color: #fff;
-  font-size: 2em;
+  font-size: 3.5rem;
   font-weight: 100;
   text-transform: uppercase;
   margin: 0;
@@ -103,104 +111,201 @@ Home page text
   letter-spacing: 2px;
 }
 
-.home-heading-1 span {
+.home__heading-1 span {
   font-weight: 400;
   color: #0097e6;
 }
+
+.home-btn-box {
+  padding-top: 2rem;
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  background-color: #445ae3;
+  border-radius: 2rem;
+  margin: 1rem;
+  text-transform: uppercase;
+  color: #eee;
+  font-size: 1.4rem;
+  transition: all 0.5s;
+}
+
 /*
 end of home page text
 *****************************************/
 
 /*
-home-page button
+Heading
 *****************************************/
 
-/*=======================================
- footer social media
-==========================================*/
+.heading {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  margin-right: -3px;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: #333;
+  position: relative;
+}
 
-footer {
+.heading::after {
+  content: "";
+  width: 10rem;
+  height: 0.8rem;
+  background-color: #45e19f;
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2rem;
+}
+
+.card-wrapper {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.card {
+  width: 32rem;
+  background-color: #fbfbf2;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  background: #485460;
+  justify-content: center;
+  margin: 2rem 0;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card .card-img {
   width: 100%;
-  height: 300px;
-  overflow: hidden;
+  height: 26rem;
+  object-fit: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 68%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 68%, 0% 100%);
 }
 
-.footer-container {
+.card h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 1.5rem 0;
+}
+
+.job-title {
+  color: #777;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.about {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  text-align: center;
+  color: #333;
+}
+
+.card .btn {
+  padding: 1rem 2.5rem;
+  background-color: #445ae3;
+  border-radius: 2rem;
+  margin: 1rem;
+  text-transform: uppercase;
+  color: #eee;
+  font-size: 1.4rem;
+  transition: all 0.5s;
+}
+
+.card .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0.5rem 0.5rem. 2rem rgba(0, 0, 0, 0.2);
+}
+
+.card .btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.social-media {
+  width: 100%;
+  list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
-  height: auto;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+  margin-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.fab {
-  font-size: 1.6em;
-  padding: 1em;
+.social-media i {
+  font-size: 3rem;
+  transition: color 0.5s;
 }
 
-.fa-facebook {
-  color: #3b5998;
+.link-btn {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+  margin-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.fa-google-plus-square {
-  color: #db4437;
-}
+/* 
+skills section
+ ***********************/
 
-.fa-twitter {
-  color: #1da1f2;
-}
-
-.fa-linkedin {
-  color: #007bb5;
-}
-
-.fa-youtube-square {
-  color: #ff0000;
-}
-
-.fa-whatsapp {
-  color: #25d366;
-}
-
-.footer-container-details--p {
-  color: #fff;
+.heading__sub {
   text-align: center;
 }
 
-/*=========================================
-===========================================*/
-
-@media (min-width: 768px) {
-  .card__section {
-    flex-direction: row;
-    padding: 1em;
-  }
-  .home-heading-1,
-  .home-heading-2 {
-    font-size: 3em;
-  }
-  .card__container {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-  .card__container-box {
-    padding: 1em;
-  }
-  .card__picture {
-    height: 20em;
-  }
+.skill {
+  height: 50vh;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 2rem 1rem;
 }
 
-@media (min-width: 1224px) {
-  .card__details {
-    padding: 2em;
+.skill-icon {
+  flex: 1 1 2rem;
+}
+
+.fab {
+  font-size: 7rem;
+}
+
+.skill-container {
+  height: 50vh;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+  margin: 0 2rem;
+}
+
+.skill-icon {
+  flex: 1 1 2rem;
+  margin: 1em;
+}
+
+/*
+skill end 
+ *********************/
+
+@media screen and (min-width: 700px) {
+  .card-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
-  #heading {
-    font-size: 1.6em;
+
+  .card {
+    margin: 2rem;
+    transition: transform 0.5s;
   }
 }
