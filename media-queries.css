@@ -1,21 +1,14 @@
-/* responsive */
-
-/* @media (min-width: 768px) {
-  .card__section {
-    flex-direction: row;
-    padding: 3em;
-  }
-  .home-heading-1,
-  .home-heading-2 {
-    font-size: 3em;
-  }
-} */
-
-
 @media screen and (min-width: 700px) {
+  .about-container,
   .card-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
+
+  .card {
+    margin: 2rem;
+    transition: transform 0.5s;
+  }
+}

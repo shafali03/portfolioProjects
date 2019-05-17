@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate/animate.min.css">
+
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+
     <!-- main css -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="media-queries.css">
@@ -17,11 +23,18 @@
 
 <body>
 
+    <!-- preloader -->
+    <div class="preloader">
+        <img src="images/Spin.gif" alt="preloader" class="preloader__gif">
+
+    </div>
+
+    <!-- end preloader -->
 
 
     <!-- video  -->
     <section id="home">
-        <video id="home-bg-video" poster="video/london.jpg" autoplay loop muted>
+        <video id="home-bg-video" poster="#" autoplay loop muted>
             <source src="video/bg.mp4" type="video/mp4">
             <source src="video/bg.ogv" type="video/ogg">
             <source src="video/bg.webm" type="video/webm">
@@ -30,17 +43,55 @@
         <!-- Overlay -->
         <div id="home-overlay"></div>
         <div class="home__content">
-            <h1 class="home__heading-1">
+            <h1 id="home__heading-1">
                 <span>Shafique</span></h1>
-            <h1 class="home__heading-2">
+            <h1 id="home__heading-2">
                 Front End Developer
             </h1>
             <div class="home-btn-box">
                 <a class="btn btn-ghost" href="#">Contact Details</a>
             </div>
+
+
         </div>
+
+        <!-- Arrow Down -->
+        <a href="#about" id="arrow-down" class="smooth-scroll">
+            <i class="fas fa-angle-double-down"></i>
+        </a>
     </section>
     <!-- end of video======================================= -->
+
+
+
+    <!-- about -->
+
+    <section>
+
+        <div class="container">
+            <h1 class="heading">ABOUT ME</h1>
+        </div>
+
+
+
+
+        <div class="about-container">
+            <div class="about__text">
+                <!-- <img src="images/super-about-img.jpg" class="about-image" alt=""> -->
+                A Story About Me
+            </div>
+            <div class="about__text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, nostrum ducimus? Sunt aut consequatur fuga vel veniam officia similique inventore, nisi provident, delectus molestiae soluta optio culpa. Distinctio, doloribus quibusdam!</p>
+            </div>
+        </div>
+        <div class="about__img">
+            <img src="images/super-about-img.jpg" class="about-image" alt="">
+        </div>
+    </section>
+
+    <!-- end of about -->
+
+
 
     <section class="section-project">
         <div class="container">
@@ -49,7 +100,7 @@
                 <div class="card">
                     <img src="images/faceApp.jpg" class="card-img" alt="">
                     <h1>Face Detect App</h1>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatem provident ullam voluptatum est suscipit corporis omnis amet illum. Facilis, nulla culpa architecto blanditiis nam illo eius molestias eum eligendi?
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatem provident ullam voluptatum est suscipit corporis omnis amet illum. Facilis, nulla culpa architecto blanditiis nam illo eius molestias eum eligendi?
                     </p>
                     <ul class="link-btn">
                         <li>
@@ -66,7 +117,7 @@
                 <div class="card">
                     <img src="images/createHex.jpg" class="card-img" alt="">
                     <h1>Create Hex Colour</h1>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatem provident ullam voluptatum est suscipit corporis omnis amet illum. Facilis, nulla culpa architecto blanditiis nam illo eius molestias eum eligendi?
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatem provident ullam voluptatum est suscipit corporis omnis amet illum. Facilis, nulla culpa architecto blanditiis nam illo eius molestias eum eligendi?
                     </p>
                     <ul class="link-btn">
                         <li>
@@ -78,12 +129,12 @@
                     </ul>
                 </div>
 
-
+                description
 
                 <div class="card">
                     <img src="images/wikiSearch.jpg" class="card-img" alt="">
                     <h1>Wiki Search API</h1>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatem provident ullam voluptatum est suscipit corporis omnis amet illum. Facilis, nulla culpa architecto blanditiis nam illo eius molestias eum eligendi?
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatem provident ullam voluptatum est suscipit corporis omnis amet illum. Facilis, nulla culpa architecto blanditiis nam illo eius molestias eum eligendi?
                     </p>
                     <ul class="link-btn">
                         <li>
@@ -100,7 +151,7 @@
                 <div class="card">
                     <img src="images/budget.jpg" class="card-img" alt="">
                     <h1>Budget App</h1>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatem provident ullam voluptatum est suscipit corporis omnis amet illum. Facilis, nulla culpa architecto blanditiis nam illo eius molestias eum eligendi?
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatem provident ullam voluptatum est suscipit corporis omnis amet illum. Facilis, nulla culpa architecto blanditiis nam illo eius molestias eum eligendi?
                     </p>
                     <ul class="link-btn">
                         <li>
@@ -117,7 +168,7 @@
                 <div class="card">
                     <img src="images/weatherApp.jpg" class="card-img" alt="">
                     <h1>Weather App</h1>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatem provident ullam voluptatum est suscipit corporis omnis amet illum. Facilis, nulla culpa architecto blanditiis nam illo eius molestias eum eligendi?
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatem provident ullam voluptatum est suscipit corporis omnis amet illum. Facilis, nulla culpa architecto blanditiis nam illo eius molestias eum eligendi?
                     </p>
                     <ul class="link-btn">
                         <li>
@@ -134,7 +185,7 @@
                 <div class="card">
                     <img src="images/tharaWeb.jpg" class="card-img" alt="">
                     <h1>Website</h1>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatem provident ullam voluptatum est suscipit corporis omnis amet illum. Facilis, nulla culpa architecto blanditiis nam illo eius molestias eum eligendi?
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatem provident ullam voluptatum est suscipit corporis omnis amet illum. Facilis, nulla culpa architecto blanditiis nam illo eius molestias eum eligendi?
                     </p>
                     <ul class="link-btn">
                         <li>
@@ -208,7 +259,7 @@
 
 
 
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>

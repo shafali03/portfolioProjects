@@ -1,3 +1,7 @@
+/* =========================================
+                Global style
+============================================ */
+
 * {
   padding: 0;
   margin: 0;
@@ -47,13 +51,32 @@ section {
   background-color: #fff;
 }
 
-/*
-background video
-*****************************************/
+/* =========================================
+                Preloader
+============================================ */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 999;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =========================================
+                Home Page
+============================================ */
 
 #home {
   background: none;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 #home-bg-video {
@@ -81,14 +104,11 @@ background video
   z-index: -1;
 }
 
-/*
-end of video
-*************/
+/* =========================================
+                Heading title
+============================================ */
 
-/*
-Home page text
-*****************************************/
-
+/* Home title banner*/
 .home__content {
   position: absolute;
   top: 60%;
@@ -100,10 +120,10 @@ Home page text
   border: 1px;
 }
 
-.home__heading-1,
-.home__heading-2 {
+#home__heading-1,
+#home__heading-2 {
   color: #fff;
-  font-size: 3.5rem;
+  font-size: 5.5rem;
   font-weight: 100;
   text-transform: uppercase;
   margin: 0;
@@ -111,7 +131,7 @@ Home page text
   letter-spacing: 2px;
 }
 
-.home__heading-1 span {
+#home__heading-1 span {
   font-weight: 400;
   color: #0097e6;
 }
@@ -122,7 +142,7 @@ Home page text
 
 .btn {
   padding: 1rem 2.5rem;
-  background-color: #445ae3;
+  background-color: #0097e6;
   border-radius: 2rem;
   margin: 1rem;
   text-transform: uppercase;
@@ -131,13 +151,31 @@ Home page text
   transition: all 0.5s;
 }
 
-/*
-end of home page text
-*****************************************/
+/* =========================================
+                Arrow Down
+============================================ */
 
-/*
-Heading
-*****************************************/
+#arrow-down {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  color: #fff;
+  font-size: 32px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  margin-left: -16px;
+  z-index: 1;
+}
+
+#arrow-down:hover,
+#arrow-down:focus {
+  color: #0097e6;
+}
+
+/* =========================================
+                Page title
+============================================ */
 
 .heading {
   text-transform: uppercase;
@@ -162,6 +200,32 @@ Heading
   border-radius: 2rem;
 }
 
+/* =========================================
+                About Page
+============================================ */
+/* // */
+.about-container {
+  /* height: 90vh; */
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.about__text {
+  flex: 1 1 300px;
+  margin: 1em;
+  font-size: 2rem;
+}
+
+.about-image {
+  width: 50%;
+  height: auto;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================
+                Cards projects
+============================================ */
 .card-wrapper {
   display: flex;
   align-items: center;
@@ -200,7 +264,7 @@ Heading
   font-weight: 300;
 }
 
-.about {
+.description {
   font-size: 1.5rem;
   margin: 1.5rem 0;
   font-style: italic;
@@ -229,21 +293,6 @@ Heading
   box-shadow: none;
 }
 
-.social-media {
-  width: 100%;
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 2rem 0;
-  margin-top: 1.5rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.social-media i {
-  font-size: 3rem;
-  transition: color 0.5s;
-}
-
 .link-btn {
   width: 100%;
   list-style: none;
@@ -254,24 +303,11 @@ Heading
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/* 
-skills section
- ***********************/
-
+/* =========================================
+                Skill page
+============================================ */
 .heading__sub {
   text-align: center;
-}
-
-.skill {
-  height: 50vh;
-  display: flex;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  padding-top: 2rem 1rem;
-}
-
-.skill-icon {
-  flex: 1 1 2rem;
 }
 
 .fab {
@@ -292,20 +328,34 @@ skills section
   margin: 1em;
 }
 
-/*
-skill end 
- *********************/
+/* =========================================
+                Animation
+============================================ */
 
-@media screen and (min-width: 700px) {
-  .card-wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
+#home-heading-1,
+#home-heading-2,
+#home-text,
+#home-btn,
+#arrow-down i {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+#home__heading-1 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
 
-  .card {
-    margin: 2rem;
-    transition: transform 0.5s;
-  }
+#home__heading-2 {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+#home-btn {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+#arrow-down i {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
 }
