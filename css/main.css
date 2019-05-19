@@ -192,7 +192,7 @@ section {
   content: "";
   width: 10rem;
   height: 0.8rem;
-  background-color: #45e19f;
+  background-color: #0097e6;
   position: absolute;
   bottom: -2rem;
   left: 50%;
@@ -205,22 +205,29 @@ section {
 ============================================ */
 /* // */
 .about-container {
-  /* height: 90vh; */
   display: flex;
   align-content: center;
   flex-wrap: wrap;
+  padding-top: 3rem;
 }
 
 .about__text {
   flex: 1 1 300px;
   margin: 1em;
   font-size: 2rem;
+  padding: 1rem;
+}
+
+.about__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
 }
 
 .about-image {
-  width: 50%;
+  width: 80%;
   height: auto;
-  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.1);
 }
 
 /* =========================================
@@ -326,6 +333,114 @@ section {
 .skill-icon {
   flex: 1 1 2rem;
   margin: 1em;
+}
+
+/* =========================================
+                Contact
+============================================ */
+
+.section-contact {
+  background-color: #e5e6e4;
+  background-size: cover;
+  padding: 40px 0;
+  /* color: #fff; */
+  overflow: hidden;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 1rem;
+  overflow: hidden;
+}
+
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 2rem 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+
+.contact-form-text:focus {
+  box-shadow: 0 0 10px 4px #34455e;
+}
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
+}
+
+.contact-form-btn {
+  border: 0;
+  padding: 1rem 2.5rem;
+  background-color: #445ae3;
+  border-radius: 2rem;
+  margin: 1rem;
+  color: #eee;
+  font-size: 1.4rem;
+  transition: 0.5s;
+}
+
+.contact-form-btn:hover {
+  background: #6bf178;
+}
+
+/* =========================================
+                Footer
+============================================ */
+
+footer {
+  background: #111;
+  height: auto;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+}
+
+ul p {
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+}
+
+span {
+  padding: 0.5rem;
+}
+.social li i {
+  font-size: 3rem;
+}
+
+.footer__text {
+  flex: 1 1 200px;
+  margin: 1em;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+.ul-border li,
+.footer-links li i {
+  padding: 1rem;
+}
+
+.footer-bottom {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 /* =========================================
