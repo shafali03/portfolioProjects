@@ -2,7 +2,9 @@
                 Global style
 ============================================ */
 
-* {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -107,8 +109,6 @@ section {
 /* =========================================
                 Heading title
 ============================================ */
-
-/* Home title banner*/
 .home__content {
   position: absolute;
   top: 60%;
@@ -151,6 +151,73 @@ section {
   transition: all 0.5s;
 }
 
+/* =========================================
+                Modal pop up
+============================================ */
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 600ms ease-in-out;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: #0097e6;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header .title {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
 /* =========================================
                 Arrow Down
 ============================================ */
@@ -408,7 +475,7 @@ footer {
 }
 
 ul p {
-  color: #fff;
+  color: blue;
   padding: 0.5rem;
 }
 
@@ -424,6 +491,7 @@ span {
   font-size: 3rem;
 }
 
+.modal__text,
 .footer__text {
   flex: 1 1 200px;
   margin: 1em;
@@ -432,6 +500,7 @@ span {
 }
 
 .ul-border li,
+.modal-links li i,
 .footer-links li i {
   padding: 1rem;
 }
