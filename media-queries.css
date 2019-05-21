@@ -1,4 +1,4 @@
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .about-container,
   .card-wrapper {
     flex-direction: row;
@@ -10,5 +10,39 @@
   .card {
     margin: 2rem;
     transition: transform 0.5s;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .main-nav li {
+    margin: 0;
+  }
+  .nav-links {
+    margin-left: 40px;
+  }
+  .logo {
+    margin-top: 0;
+  }
+
+  #nav-icon {
+    display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+    color: rgba(255, 255, 255, 1);
   }
 }

@@ -30,6 +30,25 @@ window.addEventListener('load', function () {
 
 });
 
+/* =========================================
+                Navigation
+============================================ */
+
+let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+let navIconToggle = document.querySelector("#nav-icon");
+
+navBarToggle.addEventListener('click', function () {
+    mainNav.classList.toggle('active');
+});
+
+navIconToggle.addEventListener("click", function () {
+    navIconToggle.classList.toggle("active");
+})
+
+
+
+
 
 /* =========================================
                 Modal button
@@ -60,3 +79,9 @@ function closeModal(modal) {
     if (modal == null) return
     modal.classList.remove('active')
 };
+
+
+
+
+
+
