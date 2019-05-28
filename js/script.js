@@ -38,14 +38,40 @@ let mainNav = document.getElementById('js-menu');
 let navBarToggle = document.getElementById('js-navbar-toggle');
 let navIconToggle = document.querySelector("#nav-icon");
 
-navBarToggle.addEventListener('click', function () {
+navBarToggle.addEventListener('click', () => {
     mainNav.classList.toggle('active');
+    mainNav.classList.add('smNav')
+
 });
 
-navIconToggle.addEventListener("click", function () {
-    navIconToggle.classList.toggle("active");
+navIconToggle.addEventListener("click", () => {
+    navIconToggle.classList.toggle("active"); mainNav.classList.remove('smNav')
+
 })
 
+
+/* =========================================
+                Navigation scroll
+============================================ */
+
+
+window.addEventListener('scroll', () => {
+
+
+    const nav = document.querySelector('nav')
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    const scrolled = window.scrollY;
+
+    if (Math.ceil(scrolled) === scrollable || scrolled > 100) {
+        nav.classList.add('sticky');
+    }
+    else {
+        (scrolled === scrollable || scrolled < 0)
+        nav.classList.remove('sticky');
+        nav.classList.add('noSticky')
+
+    }
+})
 
 
 
@@ -79,9 +105,4 @@ function closeModal(modal) {
     if (modal == null) return
     modal.classList.remove('active')
 };
-
-
-
-
-
 

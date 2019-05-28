@@ -22,6 +22,11 @@
     align-items: center;
     width: 100%;
   }
+
+  .smNav {
+    background-color: transparent;
+  }
+
   .main-nav {
     display: flex;
     margin-right: 30px;
