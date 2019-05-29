@@ -154,12 +154,11 @@ section {
 
 .smNav {
   background-color: #fff;
-  margin-top: -4rem;
-  padding-top: 4rem;
+  margin-top: -6.5rem;
+  padding-top: 9rem;
 }
 
-.nav-links,
-.logo {
+.nav-links {
   text-decoration: none;
   color: #0097e6;
 }
@@ -192,9 +191,14 @@ section {
 .logo {
   display: inline-block;
   font-size: 22px;
-  margin-top: 10px;
-  margin-left: 1rem;
+  margin-top: -10px;
+  margin-left: -1rem;
 }
+
+/* nav img .logoImg {
+  margin-left: 5rem;
+  padding-left: -10rem;
+} */
 
 .main-nav {
   list-style-type: none;
@@ -225,6 +229,8 @@ section {
   width: auto;
   height: auto;
   z-index: -1;
+  /* width: 100%; */
+  /* height: 100vh; */
   background-size: cover;
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
@@ -242,6 +248,12 @@ section {
   z-index: -1;
 }
 
+.logoImg {
+  width: 17rem;
+  height: auto;
+  /* position: absolute; */
+  /* padding: 2rem; */
+}
 /* =========================================
                 Heading title
 ============================================ */
@@ -609,7 +621,9 @@ textarea.contact-form-text {
 }
 
 .contact-form-btn:hover {
-  background: #6bf178;
+  background: #1be42f;
+  cursor: pointer;
+  transition: 1s;
 }
 
 /* =========================================
@@ -639,9 +653,6 @@ ul p {
   flex-direction: row;
 }
 
-span {
-  /* padding: 0.5rem; */
-}
 .social li i {
   font-size: 3rem;
 }
@@ -678,7 +689,7 @@ span {
                 Animation
 ============================================ */
 
-/* #home-heading-1,
+#home-heading-1,
 #home-heading-2,
 #home-text,
 #home-btn,
@@ -704,4 +715,4 @@ span {
 #arrow-down i {
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
-} */
+}

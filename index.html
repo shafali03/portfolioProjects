@@ -33,12 +33,13 @@
 
 
     <!-- navbar -->
-
+    <!-- <header class="header"> -->
     <nav class="navbar">
         <span id="js-navbar-toggle">
             <a id="nav-icon"><span></span></a>
         </span>
-        <a href="#" class="logo" id="homePage">Shaf Full Stack</a>
+        <!-- <a href="#" class="logo"><img src="images/logo.png" class="logoImg" alt="logo"></a> -->
+        <img class="logoImg" src="images/logo.png" alt="logo">
 
         <ul class="main-nav" id="js-menu">
             <li>
@@ -58,42 +59,47 @@
             </li>
         </ul>
     </nav>
-
-
-
     <!-- end navbar -->
+    <span id="homePage"></span>
 
-
-
-
-    <!-- video  -->
-
+    <!-- Home -->
     <section id="home">
-        <video id="home-bg-video" poster="#" autoplay loop muted>
+        <!-- Background video  -->
+        <video id="home-bg-video" poster="video/headerBG.jpg" autoplay loop muted>
             <source src="video/bg.mp4" type="video/mp4">
             <source src="video/bg.ogv" type="video/ogg">
             <source src="video/bg.webm" type="video/webm">
         </video>
 
-        <!-- Overlay -->
+        <!-- <section id="home">
+        <video autoplay loop muted poster="images/weatherApp.jpg" id="background">
+            <source src="video/bg.mp4" type="video/mp4">
+            <source src="video/bg.ogv" type="video/ogg">
+            <source src="video/bg.webm" type="video/webm">
+        </video> -->
 
+        <!-- 
+
+        <video autoplay loop muted poster="media/image/road.jpg" id="background">
+            <source src="media/video/road.mp4" type="video/mp4">
+            <source src="media/video/road.webm" type="video/webm">
+            <source src="media/video/road.ogv" type="video/ogg">
+        </video> -->
+
+        <!-- Overlay -->
         <div id="home-overlay"></div>
+        <!-- </header> -->
         <div class="home__content">
             <h1 id="home__heading-1">
                 <span>Shafique</span></h1>
             <h1 id="home__heading-2">
                 Front End Developer
             </h1>
-
-
-
             <div class="home-btn-box">
                 <button class="btn btn-ghost" data-modal-target="#modal">Contact Details</button>
             </div>
-
             <div class="modal" id="modal">
                 <div class="modal-header">
-
                     <div class="title">Contact Details</div>
                     <button data-close-button class="close-button">&times;</button>
                 </div>
@@ -116,16 +122,12 @@
                                     High Wycombe</span>
                             </li>
                         </ul>
-
                     </div>
                 </div>
             </div>
-
-
         </div>
 
         <!-- Arrow Down -->
-
         <a href="#about" id="arrow-down" class="smooth-scroll">
             <i class="fas fa-angle-double-down"></i>
         </a>
@@ -170,10 +172,10 @@
                     <p class="description">I have created an application using Clarifai API, to detect faces. Used React to build components for navigation, logo and image link to detect what URL user enters. Built a server using node and express for the backend.</p>
                     <ul class="link-btn">
                         <li>
-                            <a href="https://smart-face-detects.herokuapp.com/" class="btn">Preview</a>
+                            <a href="https://smart-face-detects.herokuapp.com/" class="btn" target="blank">Preview</a>
                         </li>
                         <li>
-                            <a href="https://github.com/shafali03/serverFaceDetectNode" class="btn">Github</a>
+                            <a href="https://github.com/shafali03/serverFaceDetectNode" class="btn" target="blank">Github</a>
                         </li>
                     </ul>
                 </div>
@@ -191,10 +193,10 @@
                     <br>
                     <ul class="link-btn">
                         <li>
-                            <a href="https://shafali03.github.io/JS_Create_hex_colour/" class="btn">Preview</a>
+                            <a href="https://shafali03.github.io/JS_Create_hex_colour/" class="btn" target="blank">Preview</a>
                         </li>
                         <li>
-                            <a href="https://github.com/shafali03/JS_Create_hex_colour" class="btn">Github</a>
+                            <a href="https://github.com/shafali03/JS_Create_hex_colour" class="btn" target="blank">Github</a>
                         </li>
                     </ul>
                 </div>
@@ -209,10 +211,10 @@
                     </p>
                     <ul class="link-btn">
                         <li>
-                            <a href="https://shafali03.github.io/wiki-search/." class="btn">Preview</a>
+                            <a href="https://shafali03.github.io/wiki-search/." class="btn" target="blank">Preview</a>
                         </li>
                         <li>
-                            <a href="https://github.com/shafali03/wiki-search" class="btn">Github</a>
+                            <a href="https://github.com/shafali03/wiki-search" class="btn" target="blank">Github</a>
                         </li>
                     </ul>
                 </div>
@@ -228,10 +230,10 @@
                     <br>
                     <ul class="link-btn">
                         <li>
-                            <a href="https://shafali03.github.io/Budget-App/." class="btn">Preview</a>
+                            <a href="https://shafali03.github.io/Budget-App/." class="btn" target="blank">Preview</a>
                         </li>
                         <li>
-                            <a href="https://github.com/shafali03/Budget-App" class="btn">Github</a>
+                            <a href="https://github.com/shafali03/Budget-App" class="btn" target="blank">Github</a>
                         </li>
                     </ul>
                 </div>
@@ -245,10 +247,10 @@
                     </p>
                     <ul class="link-btn">
                         <li>
-                            <a href="https://todayweatherapp.herokuapp.com/index.html" class="btn">Preview</a>
+                            <a href="https://todayweatherapp.herokuapp.com/index.html" class="btn" target="blank">Preview</a>
                         </li>
                         <li>
-                            <a href="https://github.com/shafali03/todayweatherapp" class="btn">Github</a>
+                            <a href="https://github.com/shafali03/todayweatherapp" class="btn" target="blank">Github</a>
                         </li>
                     </ul>
                 </div>
@@ -265,7 +267,7 @@
                     </p>
                     <ul class="link-btn">
                         <li>
-                            <a href="http://www.tharaaccountants.co.uk" class="btn">Preview</a>
+                            <a href="http://www.tharaaccountants.co.uk" target="blank" class="btn">Preview</a>
                         </li>
                         <li>
                             <!-- <a href="#" class="btn">Github</a> -->
@@ -355,8 +357,8 @@
 
                     <div class="footer__text ">
                         <ul class="ul-border social">
-                            <li><a href="#"><span><i class="fab fa-github"></i></span></a></li>
-                            <li><a href="#"><span><i class="fab fa-linkedin"></i></span></a></li>
+                            <li><a href="https://github.com/shafali03"><span><i class="fab fa-github" target="blank"></i></span></a></li>
+                            <li><a href="https://www.linkedin.com/in/shafique-mohammed-b65856101/" target="blank"><span><i class="fab fa-linkedin"></i></span></a></li>
 
                         </ul>
                     </div>
@@ -365,25 +367,25 @@
                 <div class="footer__text">
                     <ul class="footer-links ul-border">
                         <h2>Links</h2>
-                        <li><a href="#" id='homePage'><span><i class="fas fa-long-arrow-alt-right"></i></span>Home</a> </li>
-                        <li><a href="#" id='about'><span><i class="fas fa-long-arrow-alt-right"></i></span>About</a> </li>
-                        <li><a href="#" id='projects'><span><i class="fas fa-long-arrow-alt-right"></i></span>Project</a> </li>
-                        <li><a href="#" id='contact'><span><i class="fas fa-long-arrow-alt-right"></i></span>Contact</a> </li>
+                        <li><a href="#homePage" id=''><span><i class="fas fa-long-arrow-alt-right"></i></span>Home</a> </li>
+                        <li><a href="#about" id=''><span><i class="fas fa-long-arrow-alt-right"></i></span>About</a> </li>
+                        <li><a href="#projects" id=''><span><i class="fas fa-long-arrow-alt-right"></i></span>Project</a> </li>
+                        <li><a href="#contact" id=''><span><i class="fas fa-long-arrow-alt-right"></i></span>Contact</a> </li>
                     </ul>
                 </div>
 
                 <div class="footer__text">
                     <ul class="footer-project ul-border">
                         <h2>Projects</h2>
-                        <li><a href="https://smart-face-detects.herokuapp.com/"><span><i class="fas fa-long-arrow-alt-right"></i></span>Face Detect App</a></li>
+                        <li><a href="https://smart-face-detects.herokuapp.com/" target="blank"><span><i class="fas fa-long-arrow-alt-right"></i></span>Face Detect App</a></li>
 
-                        <li><a href="https://shafali03.github.io/JS_Create_hex_colour/"><span><i class="fas fa-long-arrow-alt-right"></i>Hex Colour</span></a></li>
+                        <li><a href="https://shafali03.github.io/JS_Create_hex_colour/" target="blank"><span><i class="fas fa-long-arrow-alt-right"></i>Hex Colour</span></a></li>
 
-                        <li><a href="https://shafali03.github.io/wiki-search/."><span><i class="fas fa-long-arrow-alt-right"></i></span>Wiki Search</a></li>
+                        <li><a href="https://shafali03.github.io/wiki-search/." target="blank"><span><i class="fas fa-long-arrow-alt-right"></i></span>Wiki Search</a></li>
 
-                        <li><a href="https://shafali03.github.io/Budget-App/."><span><i class="fas fa-long-arrow-alt-right"></i></span>Budget App</a></li>
+                        <li><a href="https://shafali03.github.io/Budget-App/." target="blank"><span><i class="fas fa-long-arrow-alt-right"></i></span>Budget App</a></li>
 
-                        <li><a href="https://todayweatherapp.herokuapp.com/index.html"><span><i class="fas fa-long-arrow-alt-right"></i></span>Weather App</a></li>
+                        <li><a href="https://todayweatherapp.herokuapp.com/index.html" target="blank"><span><i class="fas fa-long-arrow-alt-right"></i></span>Weather App</a></li>
 
                         <li><a href="#"><span><i class="fas fa-long-arrow-alt-right"></i></span>todo</a></li>
                     </ul>

@@ -4,7 +4,7 @@
 
 let preloader = document.querySelector('.preloader');
 
-window.addEventListener('load', function () {
+window.addEventListener('load', () => {
     preloader.style.display = 'none';
 });
 

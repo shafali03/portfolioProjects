@@ -11,6 +11,11 @@
     margin: 2rem;
     transition: transform 0.5s;
   }
+
+  #home-bg-video {
+    /* display: block; */
+    /* background-image: url(/images/weatherApp.jpg); */
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -41,6 +46,10 @@
   }
   .logo {
     margin-top: 0;
+  }
+  .logoImg {
+    position: absolute;
+    padding: 1rem;
   }
 
   #nav-icon {
