@@ -1,3 +1,5 @@
+
+
 /* =========================================
                 Preloader
 ============================================ */
@@ -28,7 +30,13 @@ window.addEventListener('load', function () {
     const arrowDown = document.querySelector('#arrow-down');
     arrowDown.classList.add('animated', 'fadeInDown', 'infinite');
 
+    const aboutText = document.querySelector('about__text');
+    aboutText.classList.add('animated', 'fadeInLeft');
+
 });
+
+
+
 
 /* =========================================
                 Navigation
@@ -47,7 +55,7 @@ navBarToggle.addEventListener('click', () => {
 navIconToggle.addEventListener("click", () => {
     navIconToggle.classList.toggle("active"); mainNav.classList.remove('smNav')
 
-})
+});
 
 
 /* =========================================
@@ -58,7 +66,7 @@ navIconToggle.addEventListener("click", () => {
 window.addEventListener('scroll', () => {
 
 
-    const nav = document.querySelector('nav')
+    const nav = document.querySelector('nav');
     const scrollable = document.documentElement.scrollHeight - window.innerHeight;
     const scrolled = window.scrollY;
 
@@ -71,10 +79,7 @@ window.addEventListener('scroll', () => {
         nav.classList.add('noSticky')
 
     }
-})
-
-
-
+});
 
 /* =========================================
                 Modal button

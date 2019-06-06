@@ -24,8 +24,8 @@ h2,
 h3 {
   font-size: 1.7rem;
   text-transform: uppercase;
-  font-weight: 300;
-  color: #485460;
+  font-weight: bold;
+  color: #0097e6;
 }
 
 p {
@@ -48,6 +48,7 @@ li span i {
 html {
   font-size: 10px;
   font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -135,6 +136,11 @@ section {
   z-index: 9999;
 }
 
+.navbar .main-nav li a:hover {
+  transition: 0.5s;
+  color: red;
+}
+
 .sticky {
   padding-bottom: 10px;
   position: fixed;
@@ -184,8 +190,9 @@ section {
   width: 100%;
 }
 
-.main-nav li:hover {
-  background-color: #333;
+.main-nav: {
+  color: red;
+  transition: 0.5s;
 }
 
 .logo {
@@ -194,11 +201,6 @@ section {
   margin-top: -10px;
   margin-left: -1rem;
 }
-
-/* nav img .logoImg {
-  margin-left: 5rem;
-  padding-left: -10rem;
-} */
 
 .main-nav {
   list-style-type: none;
@@ -229,8 +231,6 @@ section {
   width: auto;
   height: auto;
   z-index: -1;
-  /* width: 100%; */
-  /* height: 100vh; */
   background-size: cover;
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
@@ -251,8 +251,6 @@ section {
 .logoImg {
   width: 17rem;
   height: auto;
-  /* position: absolute; */
-  /* padding: 2rem; */
 }
 /* =========================================
                 Heading title
@@ -644,7 +642,7 @@ footer {
 }
 
 ul p {
-  color: #0097e6;;
+  color: #0097e6;
   padding: 0.5rem;
 }
 
@@ -662,6 +660,12 @@ ul p {
   margin: 1em;
   font-size: 1.5rem;
   padding: 2rem;
+}
+
+.footer-info {
+  color: #0097e6;
+  font-size: 1.7rem;
+  padding: 0.3rem;
 }
 
 .modal-links li i,
@@ -692,7 +696,7 @@ ul p {
 #home-heading-1,
 #home-heading-2,
 #home-text,
-#home-btn,
+.home-btn-box,
 #arrow-down i {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
@@ -707,7 +711,7 @@ ul p {
   animation-delay: 1.5s;
 }
 
-#home-btn {
+.home-btn-box {
   -webkit-animation-delay: 2.5s;
   animation-delay: 2.5s;
 }
@@ -715,4 +719,5 @@ ul p {
 #arrow-down i {
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
-}
+
+
