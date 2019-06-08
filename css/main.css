@@ -476,7 +476,14 @@ button {
   align-items: center;
   justify-content: center;
   margin: 2rem 0;
-  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in-out;
+   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+   box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.5);
+   transition: all 1s
+
 }
 
 .card .card-img {
@@ -566,6 +573,13 @@ button {
   flex: 1 1 2rem;
   margin: 1em;
 }
+
+.content {
+  width: 7rem;
+  padding-top: 15px;
+
+}
+
 
 /* =========================================
                 Contact

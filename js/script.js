@@ -10,8 +10,6 @@ window.addEventListener('load', () => {
     preloader.style.display = 'none';
 });
 
-
-
 /* =========================================
                 Animation
 ============================================ */
@@ -30,12 +28,8 @@ window.addEventListener('load', function () {
     const arrowDown = document.querySelector('#arrow-down');
     arrowDown.classList.add('animated', 'fadeInDown', 'infinite');
 
-    const aboutText = document.querySelector('about__text');
-    aboutText.classList.add('animated', 'fadeInLeft');
-
+   
 });
-
-
 
 
 /* =========================================
