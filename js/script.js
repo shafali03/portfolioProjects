@@ -28,8 +28,10 @@ window.addEventListener('load', function () {
     const arrowDown = document.querySelector('#arrow-down');
     arrowDown.classList.add('animated', 'fadeInDown', 'infinite');
 
-   
+
 });
+
+
 
 
 /* =========================================
@@ -63,10 +65,13 @@ window.addEventListener('scroll', () => {
     const nav = document.querySelector('nav');
     const scrollable = document.documentElement.scrollHeight - window.innerHeight;
     const scrolled = window.scrollY;
+    const aboutText = document.querySelector('.about__text');
+
 
     if (Math.ceil(scrolled) === scrollable || scrolled > 100) {
         nav.classList.add('sticky');
     }
+
     else {
         (scrolled === scrollable || scrolled < 0)
         nav.classList.remove('sticky');
@@ -74,6 +79,7 @@ window.addEventListener('scroll', () => {
 
     }
 });
+
 
 /* =========================================
                 Modal button

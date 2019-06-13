@@ -22,10 +22,10 @@ body {
 h1,
 h2,
 h3 {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   text-transform: uppercase;
   font-weight: bold;
-  color: #0097e6;
+  color: #08405e;
 }
 
 p {
@@ -46,10 +46,15 @@ li span i {
 }
 
 html {
+
+
+  
   font-size: 10px;
   font-family: "Lato", sans-serif;
   scroll-behavior: smooth;
 }
+
+
 
 section {
   padding: 10rem 0;
@@ -292,7 +297,7 @@ section {
   border-radius: 2rem;
   margin: 1rem;
   text-transform: uppercase;
-  color: #eee;
+  color: #fff;
   font-size: 1.4rem;
   transition: all 0.5s;
 }
@@ -379,6 +384,10 @@ button {
   padding-right: 1rem;
 }
 
+/* 
+.large {
+  width: rem;
+} */
 /* =========================================
                 Arrow Down
 ============================================ */
@@ -561,7 +570,7 @@ button {
 }
 
 .skill-container {
-  height: 50vh;
+  height: 90vh;
   display: flex;
   align-content: center;
   flex-wrap: wrap;
@@ -589,8 +598,9 @@ button {
   background-color: #e5e6e4;
   background-size: cover;
   padding: 40px 0;
-  color: #fff;
+  color: #000;
   overflow: hidden;
+  font-size: 1.5rem;
 }
 
 .contact-form {
@@ -600,7 +610,13 @@ button {
   overflow: hidden;
 }
 
-.contact-form-text {
+
+fieldset {
+	border: none;
+}
+
+input, textarea
+ {
   display: block;
   width: 100%;
   box-sizing: border-box;
@@ -613,26 +629,32 @@ button {
   transition: 0.5s;
 }
 
-.contact-form-text:focus {
+
+
+input:focus,
+textarea:focus
+ {
   box-shadow: 0 0 10px 4px #34455e;
 }
-textarea.contact-form-text {
+textarea {
   resize: none;
   height: 120px;
 }
-
-.contact-form-btn {
+.btn-ghost,
+button {
   border: 0;
-  padding: 1rem 2.5rem;
+  padding: 1rem 2rem;
   background-color: #445ae3;
   border-radius: 2rem;
   margin: 1rem;
+    width: 17rem;
+
   color: #eee;
   font-size: 1.4rem;
   transition: 0.5s;
 }
 
-.contact-form-btn:hover {
+button:hover {
   background: #1be42f;
   cursor: pointer;
   transition: 1s;
@@ -707,6 +729,8 @@ ul p {
                 Animation
 ============================================ */
 
+.about__text,
+.about__img,
 #home-heading-1,
 #home-heading-2,
 #home-text,
