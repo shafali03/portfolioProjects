@@ -9,6 +9,10 @@
     width: 100%;
   }
 
+  #home-bg-video {
+    display: block;
+  }
+
   .main-nav {
     display: flex;
     margin-right: 30px;
@@ -23,10 +27,6 @@
   }
   .logo {
     margin-top: 0;
-  }
-
-  .smNav {
-    background-color: transparent;
   }
 
   #nav-icon {
