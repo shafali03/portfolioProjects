@@ -17,14 +17,8 @@
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
-
-
     <!-- main css -->
-
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="media-queries.css">
-
-
+    <link rel="stylesheet" href="main.css">
 
 
     <style>
@@ -48,9 +42,6 @@
             /* Legacy iOS */
         }
     </style>
-
-
-    <title>Portfolio</title>
 </head>
 
 <body>
@@ -88,7 +79,7 @@
     <span id="homePage"></span>
 
     <!-- Home -->
-    <section id="home">
+    <header id="home">
         <!-- Background video  -->
         <article class="video__container">
             <video class="video__item" autoplay muted loop>
@@ -143,7 +134,7 @@
         <a href="#about" id="arrow-down" class="smooth-scroll" aria-label="this scroll to about page">
             <i class="fas fa-angle-double-down"></i>
         </a>
-    </section>
+    </header>
     <!-- end of video======================================= -->
 
 
@@ -178,7 +169,7 @@
             <div class="card-wrapper">
                 <div class="card">
                     <img src="images/faceApp.jpg" class="card-img" alt="">
-                    <h1>Face Detect App</h1>
+                    <h2>Face Detect App</h2>
                     <p class="description">I have created an application using Clarifai API, to detect faces. Used React to build components for navigation, logo and image link to detect what URL user enters. Built a server using node and express for the backend.</p>
                     <ul class="link-btn">
                         <li>
@@ -192,7 +183,7 @@
 
                 <div class="card">
                     <img src="images/createHex.jpg" class="card-img" alt="">
-                    <h1>Create Hex Colour</h1>
+                    <h2>Create Hex Colour</h2>
                     <p class="description">Created a hex colour code picker as you click on the button the background changes colour. As the colour changes also display a Hex colour code.
                     </p>
                     <br>
@@ -210,7 +201,7 @@
 
                 <div class="card">
                     <img src="images/wikiSearch.jpg" class="card-img" alt="">
-                    <h1>Wiki Search API</h1>
+                    <h2>Wiki Search API</h2>
                     <p class="description">
                         Created a Wikipedia search using Wikipedia API as you search a loader will display to show searching is in progress. Once the data is received, the loader will disappear. Ten values from Wikipedia indicating your search will be displayed.
                     </p>
@@ -224,26 +215,11 @@
                     </ul>
                 </div>
 
-                <div class="card">
-                    <img src="images/budget.jpg" class="card-img" alt="">
-                    <h1>Budget App</h1>
-                    <p class="description"> Create a budget app which monitors your budget, expense and the balance.You can also delete and edit the expense. Used HTML, Bootstrap and JavaScript.
-                    </p>
-                    <br>
-                    <br>
-                    <ul class="link-btn">
-                        <li>
-                            <a href="https://shafali03.github.io/Budget-App/." class="btn" target="blank">Preview</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/shafali03/Budget-App" class="btn" target="blank">Github</a>
-                        </li>
-                    </ul>
-                </div>
+
 
                 <div class="card">
                     <img src="images/weatherApp.jpg" class="card-img" alt="">
-                    <h1>Weather App</h1>
+                    <h2>Weather App</h2>
                     <p class="description"> Build a weather app using an external API call open weather map. The app allows users to search for any city weather. Perform HTTP request to import data from API.
                     </p>
                     <ul class="link-btn">
@@ -258,13 +234,28 @@
 
                 <div class="card">
                     <img src="images/tharaWeb.jpg" class="card-img" alt="">
-                    <h1>Website</h1>
+                    <h2>Website</h2>
                     <p class="description">Redesigned layouts using flexbox and CSS grid made the website responsive.
                         Reduce file size for faster loading by compressing images without affecting image quality.
                     </p>
                     <ul class="link-btn">
                         <li>
                             <a href="http://www.tharaaccountants.co.uk" target="blank" class="btn">Preview</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <img src="images/desbPharm.jpg" class="card-img" alt="">
+                    <h2>Website</h2>
+                    <h3>Under Construction</h3>
+                    <p class="description">This website is still under construction but take a preview
+                    </p>
+                    <br>
+                    <br>
+                    <ul class="link-btn">
+                        <li>
+                            <a href="https://desborough-pharmacy.netlify.com/" class="btn" target="blank">Preview</a>
                         </li>
                     </ul>
                 </div>
@@ -282,50 +273,50 @@
 
         <div class="skill-container">
             <div class="skill-icon" title="HTML 5">
-                <img src="images/icons/html5.png" class="content" alt="">
+                <img src="icons/html5.png" class="content" alt="">
             </div>
             <div class="skill-icon" title="CSS 3">
 
-                <img src="images/icons/css3.png" class="content" alt="">
+                <img src="icons/css3.png" class="content" alt="">
 
             </div>
             <div class="skill-icon" title="Sass">
 
-                <img src="images/icons/sass.png" class="content" alt="">
+                <img src="icons/sass.png" class="content" alt="">
 
             </div>
             <div class="skill-icon" title="JavaScript">
-                <img src=" images/icons/javascript.png" class="content" alt="">
+                <img src=" icons/javascript.png" class="content" alt="">
 
             </div>
             <div class="skill-icon" title="React">
 
-                <img src="images/icons/react.png" class="content" alt="">
+                <img src="icons/react.png" class="content" alt="">
 
             </div>
             <div class="skill-icon" title="Bootstrap">
-                <img src="images/icons/bootstrap.png" class="content" alt="">
+                <img src="icons/bootstrap.png" class="content" alt="">
             </div>
             <div class="skill-icon" title="Node JS">
-                <img src="images/icons/node.png" class="content" alt="">
+                <img src="icons/node.png" class="content" alt="">
             </div>
             <div class="skill-icon" title="Postgres SQL">
-                <img src="images/icons/postgresql.png" class="content" alt="">
+                <img src="icons/postgresql.png" class="content" alt="">
             </div>
             <div class="skill-icon" title="Postman">
-                <img src="images/icons/postman.png" class="content" alt="">
+                <img src="icons/postman.png" class="content" alt="">
 
             </div>
             <div class="skill-icon" title="Contentful">
-                <img src="images/icons/contentful.png" class="content" alt="">
+                <img src="icons/contentful.png" class="content" alt="">
 
             </div>
             <div class="skill-icon" title="Git">
-                <img src="images/icons/git.png" class="content" alt="">
+                <img src="icons/git.png" class="content" alt="">
 
             </div>
             <div class="skill-icon" title="Github">
-                <img src="images/icons/github.png" class="content" alt="">
+                <img src="icons/github.png" class="content" alt="">
 
             </div>
         </div>
@@ -346,10 +337,10 @@
 
 
             <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Name" required>
+            <input type="text" id="name" name="name" placeholder="Required" required>
 
             <label for="email">Emails Address</label>
-            <input type="email" id="email" name="_replyto" placeholder="Email" required>
+            <input type="email" id="email" name="_replyto" placeholder="Required" required>
 
             <label for="message">Message</label>
             <textarea name="name" id="message" placeholder="Leave a message"></textarea>
@@ -449,7 +440,6 @@
     </footer>
 
     <script async src="js/script.js"></script>
-    <!-- <script async src="myscript.js"></script> -->
 
 
 </body>
